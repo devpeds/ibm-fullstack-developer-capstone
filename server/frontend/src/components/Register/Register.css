@@ -49,6 +49,9 @@
 }
 
 .header{
+  display: flex;
+  flex-wrap: row;
+  justify-content: space-between;
   font: 4em sans-serif;
   color: white;
   margin: .5cm;
