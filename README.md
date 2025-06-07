@@ -82,21 +82,23 @@ C4Container
 
   Rel(admin, admin_user, "Delivered", "HTTPS")
   Rel(app, admin, "Delivers")
+
   Rel(app, db, "Reads & Writes")
 
   UpdateRelStyle(spa, user, $textColor="red", $lineColor="red", $offsetX="10")
   UpdateRelStyle(app, spa, $textColor="red", $lineColor="red", $offsetX="5")
 
-  UpdateRelStyle(app, backend, $textColor="orange", $lineColor="orange", $offsetX="-60")
-  UpdateRelStyle(backend, app, $textColor="orange", $lineColor="orange", $offsetX="7")
-  UpdateRelStyle(backend, mongo, $textColor="orange", $lineColor="orange", $offsetX="-40", $offsetY="15")
+  UpdateRelStyle(app, backend, $textColor="red", $lineColor="red", $offsetX="-60")
+  UpdateRelStyle(backend, app, $textColor="red", $lineColor="red", $offsetX="7")
+  UpdateRelStyle(backend, mongo, $textColor="red", $lineColor="red", $offsetX="-40", $offsetY="15")
 
-  UpdateRelStyle(app, senti, $textColor="orange", $lineColor="orange", $offsetX="-50", $offsetY="-50")
-  UpdateRelStyle(senti, app, $textColor="orange", $lineColor="orange", $offsetX="50", $offsetY="15")
+  UpdateRelStyle(app, senti, $textColor="red", $lineColor="red", $offsetX="-50", $offsetY="-50")
+  UpdateRelStyle(senti, app, $textColor="red", $lineColor="red", $offsetX="50", $offsetY="15")
 
   UpdateRelStyle(admin, admin_user, $textColor="blue", $lineColor="blue", $offsetX="10")
   UpdateRelStyle(app, admin, $textColor="blue", $lineColor="blue")
-  UpdateRelStyle(app, db, $textColor="blue", $lineColor="blue", $offsetX="-40", $offsetY="15")
+
+  UpdateRelStyle(app, db, $textColor="orange", $lineColor="orange", $offsetX="-40", $offsetY="15")
 
   UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="2")
 
